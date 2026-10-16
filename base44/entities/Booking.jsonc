@@ -1,0 +1,82 @@
+{
+  "name": "Booking",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "title": "Full name"
+    },
+    "email": {
+      "type": "string",
+      "format": "email",
+      "title": "Email"
+    },
+    "phone": {
+      "type": "string",
+      "title": "Phone"
+    },
+    "patient_type": {
+      "type": "string",
+      "enum": [
+        "new",
+        "returning"
+      ],
+      "default": "new",
+      "title": "Patient type"
+    },
+    "preferred_date": {
+      "type": "string",
+      "format": "date",
+      "title": "Preferred date"
+    },
+    "preferred_time": {
+      "type": "string",
+      "title": "Preferred time"
+    },
+    "symptoms": {
+      "type": "string",
+      "title": "Symptoms / notes"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "new",
+        "contacted",
+        "confirmed",
+        "completed",
+        "declined"
+      ],
+      "default": "new",
+      "title": "Status"
+    }
+  },
+  "required": [
+    "name",
+    "email"
+  ],
+  "rls": {
+    "create": true,
+    "read": {
+      "$or": [
+        {
+          "created_by_id": "{{user.id}}"
+        },
+        {
+          "user_condition": {
+            "role": "admin"
+          }
+        }
+      ]
+    },
+    "update": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "delete": {
+      "user_condition": {
+        "role": "admin"
+      }
+    }
+  }
+}
