@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, Check, CalendarDays, Clock, User, Mail, Phone, ShieldCheck } from 'lucide-react';
 import { useBooking } from '@/components/BookingContext';
-import { base44 } from '@/api/base44Client';
+import { submitBooking } from '@/api/client';
 
 const TIME_SLOTS = (() => {
   const slots = [];
@@ -32,16 +32,7 @@ export default function BookingModal() {
     setError('');
     setStep('submitting');
     try {
-      await base44.entities.Booking.create({
-        name: form.name,
-        email: form.email,
-        phone: form.phone,
-        patient_type: form.patient_type,
-        preferred_date: form.preferred_date,
-        preferred_time: form.preferred_time,
-        symptoms: form.symptoms,
-        status: 'new',
-      });
+      await submitBooking(form);
       setStep('done');
     } catch (err) {
       setError(err?.message || 'Something went wrong. Please try again or call us.');

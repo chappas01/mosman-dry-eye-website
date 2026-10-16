@@ -5,7 +5,7 @@ const BACKDROPS = [
     id: 'balmoral-ai',
     name: 'Balmoral Beach',
     desc: 'AI-rendered panorama',
-    url: 'https://media.base44.com/images/public/6ad03cd090d2083b062420d2/bacc3acb1_generated_image.png',
+    url: '/images/balmoral-beach.png',
   },
   {
     id: 'harbour-pines',

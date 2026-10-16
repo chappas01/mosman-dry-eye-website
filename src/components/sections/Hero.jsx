@@ -4,7 +4,7 @@ import { ArrowRight, MapPin } from 'lucide-react';
 import { useBooking } from '@/components/BookingContext';
 import { Image } from '@/components/ui/image';
 
-const GINA_HEADSHOT = 'https://api.research.unsw.edu.au/sites/default/files/images/profile/2022-09-Regine%2BChapman-Davies2.jpg';
+const GINA_HEADSHOT = '/images/gina-chapman-davies.jpg';
 
 export default function Hero() {
   const { openBooking } = useBooking();

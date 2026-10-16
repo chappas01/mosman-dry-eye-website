@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { ClipboardCheck, Microscope, Sparkles, HeartHandshake } from 'lucide-react';
 import { Image } from '@/components/ui/image';
 
-const CLINIC = 'https://media.base44.com/images/public/6ad03cd090d2083b062420d2/4db9572b8_generated_ba1d5a5b.png';
+const CLINIC = '/images/what-to-expect.png';
 
 const STEPS = [
   {

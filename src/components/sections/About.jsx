@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { GraduationCap, Microscope, Award, Stethoscope } from 'lucide-react';
 import { Image } from '@/components/ui/image';
 
-const GINA_HEADSHOT = 'https://api.research.unsw.edu.au/sites/default/files/images/profile/2022-09-Regine%2BChapman-Davies2.jpg';
+const GINA_HEADSHOT = '/images/gina-chapman-davies.jpg';
 
 const CREDENTIALS = [
   { icon: GraduationCap, title: 'UNSW Lecturer', body: 'Lecturer in the School of Optometry & Vision Science since 2017, teaching and clinically supervising the next generation of optometrists.' },

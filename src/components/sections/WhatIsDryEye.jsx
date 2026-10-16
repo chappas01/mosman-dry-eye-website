@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { Eye, Droplet, Flame, Sun } from 'lucide-react';
 import { Image } from '@/components/ui/image';
 
-const MACRO_EYE = 'https://media.base44.com/images/public/6ad03cd090d2083b062420d2/8daae1ed7_generated_19013ef0.png';
+const MACRO_EYE = '/images/dry-eye-explained.png';
 
 const SYMPTOMS = [
   { icon: Eye, label: 'Grittiness or foreign-body sensation' },

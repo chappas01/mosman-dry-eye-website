@@ -35,5 +35,9 @@ dist-ssr
 .env
 .vite
 
+# Backend runtime data (booking/contact submissions + generated secrets)
+/data
+config.json
+
 # Local link to a Base44 app, written by `base44 link`
 base44/.app.jsonc

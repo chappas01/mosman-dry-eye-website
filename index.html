@@ -1,15 +1,80 @@
 <!doctype html>
-<html lang="en">
+<html lang="en-AU">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="https://base44.com/logo_v2.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="manifest" href="/manifest.json" />
-    <meta name="description" content="Mosman Dry Eye — advanced Lumenis IPL and meibomian gland expression therapy in Mosman, NSW. Led by Gina Chapman-Davies, UNSW School of Optometry & Vision Science." />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <title>Mosman Dry Eye | Advanced Dry Eye Therapy · IPL · Mosman, NSW</title>
+    <meta name="description" content="Advanced dry eye treatment in Mosman, Sydney. Lumenis IPL and meibomian gland expression led by Gina Chapman-Davies, UNSW School of Optometry & Vision Science. Medicare and health fund claims available. Book a 90-minute specialist consultation." />
+    <link rel="canonical" href="https://mosmandreyeclinic.com.au/" />
+    <meta name="robots" content="index, follow" />
+    <meta name="geo.region" content="AU-NSW" />
+    <meta name="geo.placename" content="Mosman, Sydney" />
+    <meta name="geo.position" content="-33.8223;151.2563" />
+    <meta name="theme-color" content="#0b1f33" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Mosman Dry Eye" />
+    <meta property="og:title" content="Mosman Dry Eye | Advanced Dry Eye Therapy · Mosman, NSW" />
+    <meta property="og:description" content="Evidence-based IPL and meibomian gland expression in a private Mosman setting, led by a UNSW-trained dry eye specialist." />
+    <meta property="og:url" content="https://mosmandreyeclinic.com.au/" />
+    <meta property="og:locale" content="en_AU" />
+    <meta property="og:image" content="https://mosmandreyeclinic.com.au/images/balmoral-beach.png" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Mosman Dry Eye | Advanced Dry Eye Therapy" />
+    <meta name="twitter:description" content="Evidence-based IPL and meibomian gland expression in Mosman, Sydney." />
+    <meta name="twitter:image" content="https://mosmandreyeclinic.com.au/images/balmoral-beach.png" />
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-    <title>Mosman Dry Eye | Advanced Dry Eye Therapy · Mosman, NSW</title>
+
+    <!-- Structured data: Medical business -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalBusiness",
+      "additionalType": "https://schema.org/Optometrist",
+      "name": "Mosman Dry Eye",
+      "description": "Advanced dry eye clinic in Mosman, Sydney — Lumenis IPL therapy and meibomian gland expression led by Gina Chapman-Davies (UNSW School of Optometry & Vision Science).",
+      "url": "https://mosmandreyeclinic.com.au/",
+      "telephone": "+61299681247",
+      "image": "https://mosmandreyeclinic.com.au/images/balmoral-beach.png",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "86 Prince Albert Street",
+        "addressLocality": "Mosman",
+        "addressRegion": "NSW",
+        "postalCode": "2088",
+        "addressCountry": "AU"
+      },
+      "geo": { "@type": "GeoCoordinates", "latitude": -33.8223, "longitude": 151.2563 },
+      "openingHoursSpecification": [{
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "09:00",
+        "closes": "17:00"
+      }],
+      "founder": {
+        "@type": "Person",
+        "name": "Gina Chapman-Davies",
+        "jobTitle": "Dry Eye Specialist, Optometrist",
+        "alumniOf": { "@type": "CollegeOrUniversity", "name": "UNSW School of Optometry & Vision Science" }
+      },
+      "medicalSpecialty": "Ophthalmologic",
+      "availableService": [
+        { "@type": "MedicalProcedure", "name": "Lumenis OptiLight IPL therapy for dry eye" },
+        { "@type": "MedicalProcedure", "name": "Meibomian gland expression" },
+        { "@type": "MedicalTest", "name": "Comprehensive dry eye diagnostic assessment" }
+      ]
+    }
+    </script>
   </head>
   <body>
     <div id="root"></div>
