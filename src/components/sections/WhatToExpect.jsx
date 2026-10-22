@@ -83,8 +83,8 @@ export default function WhatToExpect() {
             transition={{ duration: 0.7 }}
             className="lg:sticky lg:top-28"
           >
-            <div className="aspect-[4/5] overflow-hidden rounded-sm">
-              <Image src={CLINIC} alt="Interior of the Mosman Dry Eye clinic" fittingType="fill" className="w-full h-full" />
+            <div className="aspect-[4/3] overflow-hidden rounded-sm">
+              <Image src={CLINIC} alt="Interior of the Mosman Dry Eye clinic" fittingType="cover" className="w-full h-full" />
             </div>
             <p className="mt-4 text-sm text-muted-foreground italic">
               A purpose-fitted home clinic — Lumenis IPL and advanced ophthalmic diagnostics, quietly integrated into a serene Mosman setting.
